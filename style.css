@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+}
+
+header {
+    background-color: #2D3D4E;
+    color: white;
+    padding: 16px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bookshelfHero {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/72/NYC_-_New_York_City_Library_-_1723.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    gap: 64px;
+    padding: 64px 50px;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.heroText h1 {
+    font-size: 81px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: white;
+}
+
+.heroText p {
+    font-size: 24px;
+    color: #f5f5f5;
+}
+
+.addBookForm {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    width: 40%;
+    height: 50%;
+}
+
+.addBookForm h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inputAddBook {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputAddBook label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputAddBook input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.inputAddBook input:focus {
+    outline: none;
+    border: 2px solid #2D3D4E;
+}
+
+#bookForm button {
+    background-color: #2D3D4E;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 50px;
+    display: flex;
+    gap: 32px;
+}
+
+#searchBookSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 30%;
+    padding: 16px;
+    background-color: #F6F5F2;
+    border-radius: 16px;
+}
+
+#searchBook {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+#searchBook input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#searchBook button {
+    background-color: #2D3D4E;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchBook button:hover {
+    background-color: #1E2A38;
+}
+
+#searchResultsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#searchResultsContainer .bookCard {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bookShelf {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 90%;
+}
+
+.incompleteBook, .completeBook {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#completeBookList, #incompleteBookList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.bookCard {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookCard img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: contain;
+    background-color: #2C3D50;
+}
+
+.bookCard h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.bookCard p {
+    font-size: 14px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.completeBookButton, .uncompleteBookButton {
+    background-color: #2D3D4E;
+    color: white;
+    border: 1px solid #2D3D4E;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.deleteBookButton {
+    background-color: #fff;
+    border: 1px solid #CC2B52;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
